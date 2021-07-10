@@ -3,14 +3,20 @@ uuid = "5049e819-d29b-5fba-b941-0eee7e64c1c6"
 version = "0.3.0"
 
 [deps]
+DataFrames = "a93c6f00-e57d-5684-b7b6-d8193f3e46c0"
 JuMP = "4076af6c-e467-56ae-b986-b466b2749572"
+NLPModelsJuMP = "792afdf1-32c1-5681-94e0-d7bf7a5df49e"
+Requires = "ae029012-a4dd-5104-9daa-d747884805df"
 
 [compat]
+DataFrames = "^0.21"
 JuMP = "~0.19, ~0.20, ~0.21"
+Requires = "1"
 julia = "~1"
 
 [extras]
+NLPModelsJuMP = "792afdf1-32c1-5681-94e0-d7bf7a5df49e"
 Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
 
 [targets]
-test = ["Test"]
+test = ["NLPModelsJuMP", "Test"]
